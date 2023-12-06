@@ -1,0 +1,120 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set minimum height to 100% of the viewport height */
+}
+
+h2, h3, h5 {
+    text-decoration: solid;
+    font-size: 20px;
+    color: #1c1a1a;
+}
+
+h4 {
+    font-size: 20px;
+    text-decoration: solid;
+    color: #fcf6f6;    
+}
+
+h5{
+    color: #000000; 
+}
+
+
+
+header {
+    background-image: url('Assets/Mount-Everest.webp');
+    background-size: cover; /* Make the background image cover the entire header */
+    background-position: center; /* Center the background image within the header */
+    height: 300px; /* Set a fixed height for the header */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1c1a1a; /* Set the text color to white */
+}
+
+header, main, footer {
+    padding: 20px;
+}
+
+/* Responsive Layout */
+main {
+    flex: 1; /* Grow and take up the available space */
+    display: flex;
+    flex-direction: column;
+}
+header, footer {
+    text-align: center;
+}
+
+footer {
+    color: #0b0909; /* Set the text color to white */
+    margin-top: auto;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.articles article {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    background-size: cover; /* Make the background image cover the entire container */
+    background-position: center; /* Center the background image within the container */
+    position: relative;
+    overflow: hidden;
+    color: #333; /* Set the initial text color */
+    background-color: rgba(255, 255, 255, 0.7); /* Add a semi-transparent white background to the text */
+}
+
+.p1 {
+    color: #a37d14; /* Set the text color for p1 */
+}
+
+.p2 {
+    color: rgb(252, 250, 249); /* Set the text color for p2 */
+}
+
+.p3 {
+    color: #f7f7f7; /* Set the text color for p3 */
+}
+
+.p4 {
+    color: #fffdfa; /* Set the text color for p4 */
+}
+/* Set background images for each article */
+.Discovering {
+    background-image: url('Assets/Rara_lake\,_Mugu.jpg');
+
+
+}
+
+.Adventures {
+    background-image: url('Assets/TH-1.-View-from-Ramche-South-Base-Camp.jpg');
+   
+}
+
+.Capturing {
+    background-image: url('Assets/essence.jpeg');
+}
+
+.Taste {
+    background-image: url('Assets/nepali-foods.jpg');
+
+}
+
+/* Media Queries for Larger Screens */
+@media screen and (min-width: 600px) {
+    .articles {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
